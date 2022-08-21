@@ -16,8 +16,8 @@ const Commands = {
             return console.error(e)
         }
     },
-    async actions(interaction : any) {
-       Slashs(interaction)
+    async actions(interaction : any, client : Discord.Client<boolean>) {
+       Slashs(interaction, client)
     }
 }
 

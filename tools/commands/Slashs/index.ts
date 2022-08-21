@@ -1,9 +1,10 @@
+import * as Discord from 'discord.js'
 import Plans from "./Plans";
 
-const Slashs = (interaction : any) => {
+const Slashs = (interaction : any, client : Discord.Client<boolean>) => {
 
     return [
-        Plans(interaction)
+        Plans(interaction, client)
     ]
 }
 
