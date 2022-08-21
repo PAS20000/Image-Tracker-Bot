@@ -2,6 +2,28 @@ import * as Discord from 'discord.js'
 import Create from '../../Create'
 
 const Embeds = {
+    async Welcome(client : Discord.Client<boolean>, user : Discord.User) {
+        const guild = await client.guilds.fetch('951566848414089297')
+        const id = user.id
+        const WelcomeEmbed = Create.Embed({
+            author : {
+                name : `${guild?.name}`,
+                iconURL : guild?.iconURL() as string
+            },
+            title : `
+                Welcome to the server
+            `,
+            description : `
+                🎉 **<@${user.id}>**, with you we are now **${guild.memberCount}** members 🎉!
+            `,
+            thumbnail : {
+                url : user.displayAvatarURL()
+            },
+            color: 15548997,
+        })
+
+        return WelcomeEmbed
+    },
     async Plans(client : Discord.Client<boolean>) {
         const me = await client.users.fetch('445344982031794187')
         const PlansEmbed = Create.Embed({

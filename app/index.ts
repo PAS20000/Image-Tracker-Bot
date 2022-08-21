@@ -25,10 +25,19 @@ client.on('ready', () => {
 
 client.on('guildMemberAdd', async (member) => {
     const PlansEmbed = await Embeds.Plans(client)
+    const WelcomeEmbed = await Embeds.Welcome(client, member.user)
     const DmChannel = await member.user.createDM(true)
     const welcomeChannel = client.channels.cache.get('1009000091702530078') as Discord.TextChannel
-    DmChannel.send({ embeds : [PlansEmbed] })
-    welcomeChannel.send(member.user.tag)
+    DmChannel.send({ 
+        embeds : [
+            PlansEmbed
+        ] 
+    })
+    welcomeChannel.send({
+        embeds : [
+            WelcomeEmbed
+        ]
+    })
 })
 
 client.on('interactionCreate', async (interaction) => {
