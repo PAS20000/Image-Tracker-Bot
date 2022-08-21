@@ -1,6 +1,6 @@
 import * as Discord from 'discord.js'
 import dotenv from 'dotenv'
-import Commands from '../tools/commands'
+import Commands from '../Tools/Commands'
 
 dotenv.config()
 
