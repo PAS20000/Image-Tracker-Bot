@@ -1,12 +1,22 @@
 type SlashCommands = [
-    'plans'
+    'plans',
+    'avatar'
 ][number]
 
-const Data = [
+type DataParams = {
+    name : SlashCommands,
+    description : string
+}
+
+const Data : DataParams[] = [
     {
         name : 'plans',
         description : 'Plans information'
     },
+    {
+        name : 'avatar',
+        description : 'Show @user avatar'
+    }
 ]
 
 export {

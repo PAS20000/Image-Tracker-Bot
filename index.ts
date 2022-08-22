@@ -1,7 +1,7 @@
 import * as Discord from 'discord.js'
 import dotenv from 'dotenv'
-import Commands from '../Tools/Commands'
-import Embeds from '../Tools/Commands/Embeds'
+import Commands from './Tools/Commands'
+import Embeds from './Tools/Commands/Embeds'
 
 dotenv.config()
 

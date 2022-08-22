@@ -4,7 +4,6 @@ import Create from '../../Create'
 const Embeds = {
     async Welcome(client : Discord.Client<boolean>, user : Discord.User) {
         const guild = await client.guilds.fetch('951566848414089297')
-        const id = user.id
         const WelcomeEmbed = Create.Embed({
             author : {
                 name : `${guild?.name}`,
@@ -87,6 +86,20 @@ const Embeds = {
         })
 
         return PlansEmbed
+    },
+    Avatar(user : Discord.User) {
+        const AvatarEmbed = Create.Embed({
+            title : `**Avatar**`,
+            description : `
+                **<@${user.id}>**
+            `,
+            image : { 
+                url : user.displayAvatarURL({ size : 2048 }) 
+            },
+            color: 15548997
+        })
+
+        return AvatarEmbed
     }
 }
 
