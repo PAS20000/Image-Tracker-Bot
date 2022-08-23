@@ -19,21 +19,30 @@ const client = new Discord.Client({
 
 client.on('ready', () => {
     console.log('[👾Start👾]...')
-    console.log(`[Logged in as ${client.user?.tag}!]`)
     Commands.init()
 })
 
 client.on('guildMemberAdd', async (member) => {
     const PlansEmbed = await Embeds.Plans(client)
     const WelcomeEmbed = await Embeds.Welcome(client, member.user)
-    const DmChannel = await member.user.createDM(true)
     const welcomeChannel = client.channels.cache.get('1009000091702530078') as Discord.TextChannel
-    DmChannel.send({ 
+    const commandChannel = await client.channels.fetch('1010182129621147752') as Discord.TextChannel
+
+    await member.send({ 
         embeds : [
             PlansEmbed
         ] 
+    }).catch(async (e) => {
+        console.error(e)
+        await commandChannel.send({
+            embeds : [
+                PlansEmbed
+            ],
+            content: `<@${member.user.id}>`
+        })
     })
-    welcomeChannel.send({
+
+   await welcomeChannel.send({
         embeds : [
             WelcomeEmbed
         ]
