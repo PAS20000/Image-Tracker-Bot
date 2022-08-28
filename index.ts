@@ -5,7 +5,6 @@ import Embeds from './Tools/Commands/Embeds'
 
 dotenv.config()
 
-
 const client = new Discord.Client({
     intents : [
         'MessageContent',
