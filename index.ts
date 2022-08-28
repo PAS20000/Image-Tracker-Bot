@@ -2,6 +2,7 @@ import * as Discord from 'discord.js'
 import dotenv from 'dotenv'
 import Commands from './Tools/Commands'
 import Embeds from './Tools/Commands/Embeds'
+import ThrowError from './Tools/ThrowError'
 
 dotenv.config()
 
@@ -32,7 +33,9 @@ client.on('guildMemberAdd', async (member) => {
             PlansEmbed
         ] 
     }).catch(async (e) => {
-        console.error(e)
+        ThrowError({
+            describe : `member send menssage error : ${e}`
+        })
         await commandChannel.send({
             embeds : [
                 PlansEmbed
@@ -45,6 +48,10 @@ client.on('guildMemberAdd', async (member) => {
         embeds : [
             WelcomeEmbed
         ]
+    }).catch((e) => {
+        ThrowError({
+            describe : `Welcome channel send menssage error : ${e}`
+        })
     })
 })
 
