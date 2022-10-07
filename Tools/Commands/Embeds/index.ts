@@ -79,8 +79,19 @@ const Embeds = {
                     `
                 },
                 {
-                    name : ` 🔗 Share this server`,
+                    name : ` 🎫 Share this server`,
                     value:'<#1010192339886669905>'
+                },
+                {
+                    name : `🔗 links`,
+                    value: `
+                        [**Website**](https://www.imagetracker.org)
+                        [**Patreon**](https://www.patreon.com/Image_Tracker)
+                        [**Youtube**](https://www.youtube.com/channel/UCnl60Xy3I5Z1pwFvyf14FIQ)
+                        [**Tik tok**](https://www.tiktok.com/@image_tracker)
+                        [**Instagram**](https://www.instagram.com/imagetrackerofficial/)
+                        [**Twitter**](https://twitter.com/ImageTracker)
+                    `
                 }
             ],
             url : 'https://www.patreon.com/Image_Tracker',
@@ -91,14 +102,10 @@ const Embeds = {
             image : { 
                 url : 'https://c10.patreonusercontent.com/4/patreon-media/p/campaign/9050919/c6d45e729ff34dcd942b2a502809b232/eyJ3IjoxOTIwLCJ3ZSI6MX0%3D/20.png?token-time=1667520000&token-hash=yV5Xk4xlNh0UD-o4lMq9b4NuxxAeVSEANc4UfJlaRRI%3D' 
             },
-            footer : { 
+            footer : {
+
                 text : `
-                    [**Website**](https://www.imagetracker.org)
-                    [**Patreon**](https://www.patreon.com/Image_Tracker)
-                    [**Youtube**](https://www.youtube.com/channel/UCnl60Xy3I5Z1pwFvyf14FIQ)
-                    [**Tik tok**](https://www.tiktok.com/@image_tracker)
-                    [**Instagram**](https://www.instagram.com/imagetrackerofficial/)
-                    [**Twitter**](https://twitter.com/ImageTracker)
+                    
                 `,
             },
         })
