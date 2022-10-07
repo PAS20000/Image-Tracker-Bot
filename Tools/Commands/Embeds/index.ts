@@ -43,6 +43,15 @@ const Embeds = {
                 },
                 {
                     name : `
+                        💟 *Orichalcum* $ 30.00
+                    `,
+                    value :`
+                        **Unlimited Storage**
+                        [Become a **Orichalcum** member](https://www.patreon.com/join/Image_Tracker/checkout?rid=9153254)
+                    `
+                },
+                {
+                    name : `
                         💎 *Diamond* $ 14.99
                     `,
                     value : `
@@ -56,7 +65,7 @@ const Embeds = {
                         💚 *Platinum* $ 9.99
                     `,
                     value : `
-                        **Unlimited Storage**
+                        **Limit of 700 images / web site**
                         [Become a **Platinum** member](https://www.patreon.com/join/Image_Tracker/checkout?rid=9007359)
                     `
                 },
@@ -65,7 +74,7 @@ const Embeds = {
                         📀 *Gold* $ 7.99
                     `,
                     value :`
-                        **Unlimited Storage**
+                        **Limit of 400 images / web site**
                         [Become a **Gold** member](https://www.patreon.com/join/Image_Tracker/checkout?rid=9007359)
                     `
                 },
@@ -74,13 +83,22 @@ const Embeds = {
                     value:'<#1010192339886669905>'
                 }
             ],
-            url : 'https://www.patreon.com/user?u=77769234',
-            thumbnail : { url : 'https://taplink.st/a/5/4/a/6/839799.png?3' },
-            color: 15548997,
-            image : { url : 'https://c10.patreonusercontent.com/4/patreon-media/p/campaign/9050919/c6d45e729ff34dcd942b2a502809b232/eyJ3IjoxOTIwLCJ3ZSI6MX0%3D/7.png?token-time=1662249600&token-hash=F5r_uky6mZhUA6fosR2PIJHNJar5NQH6VKRxaYaJQB8%3D' },
+            url : 'https://www.patreon.com/Image_Tracker',
+            thumbnail : { 
+                url : 'https://c10.patreonusercontent.com/4/patreon-media/p/campaign/9050919/c66a5db732c8461290bd3dae319a5c8b/eyJ3IjoyMDB9/15.png?token-time=2145916800&token-hash=Uan5c9B-pYfGXGWxDGCTWfhHiGZI5LrlNnIS0FD8QeQ%3D' 
+            },
+            color: 10181046,
+            image : { 
+                url : 'https://c10.patreonusercontent.com/4/patreon-media/p/campaign/9050919/c6d45e729ff34dcd942b2a502809b232/eyJ3IjoxOTIwLCJ3ZSI6MX0%3D/20.png?token-time=1667520000&token-hash=yV5Xk4xlNh0UD-o4lMq9b4NuxxAeVSEANc4UfJlaRRI%3D' 
+            },
             footer : { 
                 text : `
-                    ...
+                    [**Website**](https://www.imagetracker.org)
+                    [**Patreon**](https://www.patreon.com/Image_Tracker)
+                    [**Youtube**](https://www.youtube.com/channel/UCnl60Xy3I5Z1pwFvyf14FIQ)
+                    [**Tik tok**](https://www.tiktok.com/@image_tracker)
+                    [**Instagram**](https://www.instagram.com/imagetrackerofficial/)
+                    [**Twitter**](https://twitter.com/ImageTracker)
                 `,
             },
         })
