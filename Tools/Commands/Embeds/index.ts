@@ -87,7 +87,7 @@ const Embeds = {
                     value: `
                         [**Website**](https://www.imagetracker.org)
                         [**Patreon**](https://www.patreon.com/Image_Tracker)
-                        [**Youtube**](https://www.youtube.com/channel/UCnl60Xy3I5Z1pwFvyf14FIQ)
+                        [**Youtube**](https://www.youtube.com/channel/UCy3AmLkWwVhcjbRGQXhCkeQ)
                         [**Tik tok**](https://www.tiktok.com/@image_tracker)
                         [**Instagram**](https://www.instagram.com/imagetrackerofficial/)
                         [**Twitter**](https://twitter.com/ImageTracker)
@@ -96,11 +96,11 @@ const Embeds = {
             ],
             url : 'https://www.patreon.com/Image_Tracker',
             thumbnail : { 
-                url : 'https://c10.patreonusercontent.com/4/patreon-media/p/campaign/9050919/c66a5db732c8461290bd3dae319a5c8b/eyJ3IjoyMDB9/15.png?token-time=2145916800&token-hash=Uan5c9B-pYfGXGWxDGCTWfhHiGZI5LrlNnIS0FD8QeQ%3D' 
+                url : 'https://imagetracker.org/media/utils/Logo-image-tracker-rotate.gif' 
             },
             color: 10181046,
             image : { 
-                url : 'https://c10.patreonusercontent.com/4/patreon-media/p/campaign/9050919/c6d45e729ff34dcd942b2a502809b232/eyJ3IjoxOTIwLCJ3ZSI6MX0%3D/20.png?token-time=1667520000&token-hash=yV5Xk4xlNh0UD-o4lMq9b4NuxxAeVSEANc4UfJlaRRI%3D' 
+                url : 'https://imagetracker.org/media/utils/banner-patreon.png' 
             },
             footer : {
 
